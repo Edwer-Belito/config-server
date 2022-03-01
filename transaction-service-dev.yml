@@ -9,3 +9,23 @@ spring:
       port: 27017
   application:
     name: TRANSACTION-SERVICE
+
+
+#Actuator
+management:
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: health, info, refresh, restart, env
+  endpoint:
+    health:
+      enabled: true
+    info:
+      enabled: true
+    refresh:
+      enabled: true
+    restart:
+      enabled: true
+    env:
+      enabled: true
