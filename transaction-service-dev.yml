@@ -16,7 +16,7 @@ application:
   operation:
     DEPOSITO: DEPOSITO
     RETIRO: RETIRO
-    
+
 #Actuator - dev
 management:
   endpoints:
