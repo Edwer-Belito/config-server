@@ -15,9 +15,9 @@ application:
   location: config (GITHUB) DEV
   config:
     profile: dev
-    description: valor obtenido desde 'dummy-client1-prod.yml'
+    description: valor obtenido desde 'transaction-service-dev.yml'
   users:
-    transactionId: appTransaction - dev
+    transactionId: appTransactionDev
     operations: DEPOSITO,RETIRO
 
 #Actuator - dev
