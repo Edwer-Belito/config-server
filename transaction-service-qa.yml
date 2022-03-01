@@ -10,6 +10,12 @@ spring:
   application:
     name: TRANSACTION-SERVICE
 
+#Variables - QA
+application:
+  location: config (gitHub) - Enviroment QA
+  operation:
+    DEPOSITO: DEPOSITO
+    RETIRO: RETIRO
 
 #Actuator QA
 management:
