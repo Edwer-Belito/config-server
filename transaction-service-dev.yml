@@ -10,13 +10,6 @@ spring:
   application:
     name: TRANSACTION-SERVICE
 
-#Variables - dev
-application:
-  location: config (GITHUB) DEV
-  config:
-    profile: dev
-    description: enviroment dev from transaction-service-dev.yml
-
 #Actuator - dev
 management:
   endpoints:
@@ -35,3 +28,10 @@ management:
       enabled: true
     env:
       enabled: true
+  
+#Variables - dev
+application:
+  location: config (GITHUB) DEV
+  config:
+    profile: dev
+    description: enviroment dev from transaction-service-dev.yml
