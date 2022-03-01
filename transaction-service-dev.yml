@@ -10,8 +10,14 @@ spring:
   application:
     name: TRANSACTION-SERVICE
 
-
-#Actuator
+#Variables - dev
+application:
+  location: config (gitHub) - Enviroment DEV
+  operation:
+    DEPOSITO: DEPOSITO
+    RETIRO: RETIRO
+    
+#Actuator - dev
 management:
   endpoints:
     enabled-by-default: false
