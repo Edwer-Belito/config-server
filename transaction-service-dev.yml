@@ -12,10 +12,13 @@ spring:
 
 #Variables - dev
 application:
-  location: config (gitHub) - Enviroment DEV
-  operation:
-    DEPOSITO: DEPOSITO
-    RETIRO: RETIRO
+  location: config (GITHUB) DEV
+  config:
+    profile: dev
+    description: valor obtenido desde 'dummy-client1-prod.yml'
+  users:
+    transactionId: appTransaction - dev
+    operations: DEPOSITO,RETIRO
 
 #Actuator - dev
 management:
