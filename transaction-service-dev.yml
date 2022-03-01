@@ -15,7 +15,7 @@ application:
   location: config (GITHUB) DEV
   config:
     profile: dev
-    description: valor obtenido desde 'transaction-service-dev.yml'
+    description: enviroment dev from 'transaction-service-dev.yml'
   users:
     transactionId: appTransactionDev
     operations: DEPOSITO,RETIRO
