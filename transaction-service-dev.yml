@@ -35,3 +35,7 @@ application:
   config:
     profile: dev
     description: enviroment dev from transaction-service-dev.yml
+    
+  transaction:
+    DEPOSITO: DEPOSITO
+    RETIRO: RETIRO
