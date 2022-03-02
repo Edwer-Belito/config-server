@@ -34,7 +34,7 @@ application:
   location: config (GITHUB) DEV
   config:
     profile: dev
-    description: enviroment dev from transaction-service-dev.yml
+    description: enviroment dev from transaction-service-dev.yml - REFRESH ACTUATOR
     
   operation:
     DEPOSITO: DEPOSITO
