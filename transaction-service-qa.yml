@@ -9,10 +9,14 @@ spring:
       port: 27017
   application:
     name: TRANSACTION-SERVICE
-
+    
 #Variables - QA
 application:
-  location: config (gitHub) - Enviroment QA
+  location: config (GITHUB) QA
+  config:
+    profile: qa
+    description: enviroment dev from transaction-service-qa.yml
+    
   operation:
     DEPOSITO: DEPOSITO
     RETIRO: RETIRO
