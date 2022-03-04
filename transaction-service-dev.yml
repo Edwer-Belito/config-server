@@ -42,3 +42,4 @@ application:
     payment: PAGO
     consumption: CONSUMO
     numberOperationAllowed: 4
+    commision: 30.00
