@@ -8,7 +8,7 @@ spring:
       host: mongoDB
       port: 27017
   application:
-    name: CUSTOMER-SERVICE
+    name: customer-service
 
 #Actuator
 management:
