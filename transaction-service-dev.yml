@@ -8,7 +8,7 @@ spring:
       host: mongoDB
       port: 27017
   application:
-    name: TRANSACTION-SERVICE
+    name: transaction-service
 
 #Actuator - dev
 management:
