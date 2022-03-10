@@ -26,10 +26,4 @@ management:
       enabled: true
     env:
       enabled: true
-      
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-server-service:8761/eureka
 
