@@ -7,8 +7,6 @@ spring:
       database: customerDB
       host: mongoDB
       port: 27017
-  application:
-    name: customer-service
 
 #Actuator
 management:
@@ -28,3 +26,10 @@ management:
       enabled: true
     env:
       enabled: true
+      
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server-service:8761/eureka
+
