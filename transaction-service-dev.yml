@@ -7,8 +7,7 @@ spring:
       database: transactionBD
       host: mongoDB
       port: 27017
-  application:
-    name: transaction-service
+
 
 #Actuator - dev
 management:
@@ -28,7 +27,14 @@ management:
       enabled: true
     env:
       enabled: true
-  
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server-service:8761/eureka
+
+
 #Variables - dev
 application:
   location: config (GITHUB) DEV
