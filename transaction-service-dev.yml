@@ -7,6 +7,12 @@ spring:
       database: transactionBD
       host: mongoDB
       port: 27017
+      
+  kafka:
+    producer:
+      bootstrap-servers: kafka:9093
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 
 #Actuator - dev
@@ -34,12 +40,6 @@ eureka:
     service-url:
       defaultZone: http://eureka-server-service:8761/eureka
 
-spring:
-  kafka:
-    producer:
-      bootstrap-servers: kafka:9093
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 kafka:
   topic: topic-demo
