@@ -7,6 +7,20 @@ spring:
       database: customerDB
       host: mongoDB
       port: 27017
+      
+  kafka:
+    consumer:
+      bootstrap-servers: kafka:9093
+      group-id: group-id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.use.type.headers: false
+        spring.json.value.default.type: com.nttdata.kafka.model.Product
+    properties:
+      spring.json.trusted.packages: "*"
+
 
 #Actuator
 management:
@@ -34,17 +48,4 @@ eureka:
       defaultZone: http://eureka-server-service:8761/eureka
 
 
-spring:
-  kafka:
-    consumer:
-      bootstrap-servers: kafka:9093
-      group-id: group-id
-      auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      properties:
-        spring.json.use.type.headers: false
-        spring.json.value.default.type: com.nttdata.kafka.model.Product
-    properties:
-      spring.json.trusted.packages: "*"
 
