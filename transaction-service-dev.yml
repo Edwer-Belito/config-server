@@ -50,7 +50,7 @@ application:
   location: config (GITHUB) DEV
   config:
     profile: dev
-    description: enviroment dev refresh
+    description: enviroment dev refresh 2da vez
     
   operation:
     deposit: DEPOSITO
@@ -58,4 +58,4 @@ application:
     payment: PAGO
     consumption: CONSUMO
     numberOperationAllowed: 4
-    commision: 50.00
+    commision: 20.00
